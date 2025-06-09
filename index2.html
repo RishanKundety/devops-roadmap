@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DevOps + AWS Roadmap Flowchart</title>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+    .container {
+      padding: 20px;
+      overflow: auto;
+      height: 100vh;
+    }
+    .mermaid {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      min-width: 1200px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="mermaid">
+      %%{ init: { "theme": "default", "themeVariables": {
+        "fontSize": "14px",
+        "primaryColor": "#f9f9f9",
+        "edgeLabelBackground":"#ffffff",
+        "clusterBkg": "#f5f5f5",
+        "clusterBorder": "#bbb"
+      }} }%%
+
+      graph TD
+        %% Main Title
+        A([AWS + DevOps Roadmap]):::main
+
+        %% BASICS
+        A --> B([Basics]):::basics
+        B --> B1((Key Features of Computer)):::basics
+        B --> B2((Compiler and Interface)):::basics
+
+        %% CLOUD
+        A --> C([Cloud Computing]):::cloud
+        C --> C1((Cloud Concepts)):::cloud
+        C --> C2((IAM)):::cloud
+        C --> C3((Service Models)):::cloud
+        C --> C4((Well Architected Framework)):::cloud
+        C --> C5((AWS Architecture)):::cloud
+
+        %% NETWORKING
+        A --> D([AWS Networking]):::network
+        D --> D1((VPC)):::network
+        D --> D2((Subnets)):::network
+        D --> D3((Route Tables)):::network
+        D --> D4((Internet Gateway)):::network
+        D --> D5((NAT)):::network
+        D --> D6((Security Groups)):::network
+        D --> D7((NACL)):::network
+        D --> D8((Key Pairs)):::network
+
+        %% COMPUTE & STORAGE
+        A --> E([Compute & Storage]):::compute
+        E --> E1((EC2)):::compute
+        E --> E2((ELB)):::compute
+        E --> E3((Lambda)):::compute
+        E --> E4((S3)):::compute
+        E --> E5((EBS)):::compute
+        E --> E6((EFS)):::compute
+        E --> E7((CloudFormation)):::compute
+
+        %% MONITORING
+        A --> F([Monitoring & Logging]):::monitoring
+        F --> F1((CloudWatch)):::monitoring
+        F --> F2((CloudTrail)):::monitoring
+        F --> F3((SNS)):::monitoring
+        F --> F4((Billing)):::monitoring
+        F --> F5((API Gateway)):::monitoring
+        F --> F6((REST)):::monitoring
+        F --> F7((GitHub)):::monitoring
+
+        %% DATABASES
+        A --> G([Databases]):::db
+        G --> G1((RDS)):::db
+        G --> G2((DynamoDB)):::db
+        G --> G3((Aurora)):::db
+        G --> G4((ElasticCache)):::db
+        G --> G5((SSM)):::db
+        G --> G6((Best Practices)):::db
+
+        %% CONTAINERS
+        A --> H([Containers]):::container
+        H --> H1((Docker Architecture)):::container
+        H --> H2((Docker Swarm)):::container
+        H --> H3((Docker Networking)):::container
+        H --> H4((ECR)):::container
+        H --> H5((Linux)):::container
+        H --> H6((Bash)):::container
+
+        %% KUBERNETES
+        A --> I([Kubernetes]):::k8s
+        I --> I1((Kubernetes Architecture)):::k8s
+
+        %% TOOLS
+        A --> J([Tools]):::tools
+        J --> J1((Hibernate)):::tools
+        J --> J2((Bastion Host)):::tools
+        J --> J3((Boot3.0)):::tools
+        J --> J4((VPC Endpoint)):::tools
+        J --> J5((Auto Scaling)):::tools
+        J --> J6((Elastic IP)):::tools
+
+        %% IAM & SECURITY
+        A --> K([IAM & Security]):::iam
+        K --> K1((Users & Groups)):::iam
+        K --> K2((Roles)):::iam
+        K --> K3((Policies)):::iam
+        K --> K4((Assume Role)):::iam
+        K --> K5((Instance Profile)):::iam
+
+        %% DNS & LOAD BALANCING
+        A --> L([DNS & Load Balancing]):::dns
+        L --> L1((Route53)):::dns
+        L --> L2((CloudFront)):::dns
+        L --> L3((ELB)):::dns
+
+      %% Styling by category
+      classDef main fill:#6c63ff,stroke:#3f3d56,stroke-width:2px,color:#fff;
+      classDef basics fill:#d6eaff,stroke:#2b6cb0;
+      classDef cloud fill:#e6ffed,stroke:#22863a;
+      classDef network fill:#fff3cd,stroke:#b08900;
+      classDef compute fill:#fde2e2,stroke:#cc0000;
+      classDef monitoring fill:#e0dfff,stroke:#6f42c1;
+      classDef db fill:#d0f0c0,stroke:#2f855a;
+      classDef container fill:#ffe0b2,stroke:#ff9800;
+      classDef k8s fill:#e1f5fe,stroke:#0288d1;
+      classDef tools fill:#fbe9e7,stroke:#d84315;
+      classDef iam fill:#e8f5e9,stroke:#43a047;
+      classDef dns fill:#f0f4c3,stroke:#c0ca33;
+    </div>
+  </div>
+
+  <script>
+    mermaid.initialize({ startOnLoad: true });
+  </script>
+</body>
+</html>
