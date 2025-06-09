@@ -1,34 +1,50 @@
-# DevOps Roadmap Flowchart
+# 🛠️ DevOps + AWS Roadmap Flowchart
 
-This project is a visual roadmap of DevOps concepts, created using [Mermaid.js](https://mermaid.js.org/) and hosted via GitHub Pages.
+This project is a **visual learning roadmap** for DevOps and AWS topics using [Mermaid.js](https://mermaid.js.org/) in a browser-friendly HTML format.
 
 ## 🌐 Live Site
 
-Visit the live site here:  
-[https://github.com/RishanKundety/devops-roadmap.git](https://your-username.github.io/devops-roadmap/)  
+View it live here:  
+[https://your-username.github.io/devops-roadmap](https://your-username.github.io/devops-roadmap)
 
+## 📌 What's Included
 
-## 📄 Description
+The roadmap covers:
 
-The flowchart includes key DevOps learning paths such as:
+### 🔹 DevOps Essentials
 - Programming Languages
-- Operating Systems
-- Version Control Systems (e.g., Git)
+- Operating Systems (Linux, Unix, Windows)
+- Version Control (Git)
+- Containers & Kubernetes
+- CI/CD & Tools
 
-This project uses **HTML** and **Mermaid.js** to create and render diagrams directly in the browser.
+### ☁️ AWS Fundamentals
+- Cloud Concepts & IAM
+- Networking (VPC, Subnets, NAT, etc.)
+- EC2, S3, Lambda, and CloudFormation
+- Monitoring (CloudWatch, CloudTrail, SNS)
+- Databases (RDS, DynamoDB)
+- Security (Roles, Policies, Instance Profile)
+- Route53, ELB, CloudFront
 
-## 🛠 Tech Stack
+Each section is color-coded and structured to show dependencies and progressions in learning.
+
+## ⚙️ Tech Stack
 
 - HTML5
-- CSS3 (inline styling)
-- [Mermaid.js](https://mermaid.js.org/) (for flowcharts)
-- GitHub Pages (for hosting)
+- Mermaid.js
+- CSS3 (for layout/styling)
+- GitHub Pages (for deployment)
 
 ## 🚀 How to Use
 
 1. Clone or download this repository.
-2. Open `index.html` in your browser to view the flowchart locally.
-3. Or visit the GitHub Pages link to view it online.
+2. Open `index.html` in a browser (no build needed).
+3. Optionally host via GitHub Pages or AWS S3 static hosting.
+
+## 💡 Contributing
+
+Pull requests are welcome if you'd like to improve the roadmap or fix issues.
 
 ## 📜 License
 
