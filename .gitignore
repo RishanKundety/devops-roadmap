@@ -7,3 +7,11 @@ Thumbs.db
 
 # Ignore node and dependency directories (not used here but good practice)
 node_modules/
+
+# Ignore deployment and build folders
+dist/
+build/
+
+# Ignore OS and temp files
+*.log
+*.tmp
